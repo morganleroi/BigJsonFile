@@ -12,7 +12,7 @@ def randomString(stringLength=10):
 
 def generate_json2():
     data = []
-    for i in range(700000):
+    for i in range(150000):
         data.append({
             'name': randomString(),
             'website': randomString(),
@@ -20,7 +20,7 @@ def generate_json2():
             'objectID': str(uuid.uuid4())
         })
 
-    with open('data/X.json', 'w') as outfile:
+    with open('data/150k.json', 'w') as outfile:
         json.dump(data, outfile)
 
 
